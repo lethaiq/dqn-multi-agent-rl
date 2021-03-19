@@ -197,7 +197,7 @@ class agentslandmarks:
         positions_action_applied = []
         for idx in range(len(pos_list)):
             if act_list[idx] != 4:
-                pos_act_applied = map(operator.add, pos_list[idx], self.A_DIFF[act_list[idx]])
+                pos_act_applied = list(map(operator.add, pos_list[idx], self.A_DIFF[act_list[idx]]))
                 # checks to make sure the new pos in inside the grid
                 for i in range(0, 2):
                     if pos_act_applied[i] < 0:
