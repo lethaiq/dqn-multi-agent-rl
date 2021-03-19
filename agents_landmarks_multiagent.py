@@ -191,7 +191,7 @@ if __name__ =="__main__":
 
 
     # Visualization Parameters
-    parser.add_argument('-r', '--render', action='store_false', help='Turn on visualization if "store_false"')
+    parser.add_argument('-r', '--render', default=False, action='store_false', help='Turn on visualization if "store_false"')
     parser.add_argument('-re', '--recorder', action='store_true', help='Store the visualization as a movie '
                                                                        'if "store_false"')
 
